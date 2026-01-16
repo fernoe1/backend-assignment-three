@@ -6,7 +6,7 @@ const router = express.Router();
 
 // 1
 router.post('/blogs', async (req, res) => {
-    const {title, body, author} = req.body;
+    const { title, body, author } = req.body;
 
     try {
         const blogPost = await BlogPost.create({title, body, author});
